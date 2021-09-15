@@ -1,0 +1,8 @@
+print('CHALLENGE 13')
+print('='*10, 'REAJUSTE DE SALÁRIO', '='*10)
+print('-'*50)
+nome = input('Digite o nome do funcionário: ')
+sa = float(input('Digite o salário atual do funcionário: R$'))
+print(f'O Sr(a). {nome} deixará de receber o valor de R${sa} e passará a receber R${sa*1.15:.2f}!')
+print('Parabéns pelo aumento de 15%!')
+print('-'*50)

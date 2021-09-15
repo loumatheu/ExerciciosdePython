@@ -1,0 +1,8 @@
+print('                   CHALLENGE 15')
+print('='*15, 'ALUGUEL DE CARROS', '='*15)
+print('-'*50)
+km = float(input('Digite a distância percorrida em Km: '))
+dias = int(input('Por quantos dias o veículo foi alugado? '))
+total = (60*dias) + (0.15*km)
+print(f'O total a pagar é de R${total:.2f}!')
+print('-'*50)
