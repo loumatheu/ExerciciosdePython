@@ -1,5 +1,4 @@
-from pydub import AudioSegment
-from pydub.playback import play
+from pygame import mixer
 from emoji import emojize
 
 print('=====================================')
@@ -8,7 +7,8 @@ print('=====================================')
 print(emojize(':musical_note: MP3 Player :notes:', use_aliases=True))
 
 print('Reproduzindo a melhor música do dia:')
-music = AudioSegment.from_mp3('musica.mp3')
-play(music)
+mixer.init()
+mixer.music.load('musica.mp3')
+mixer.music.play()
 
-NÃO RESOLVIDO
+input('Pressione enter para encerrar: ')
