@@ -4,8 +4,8 @@
 #dezena:3
 #centena:8
 #milhar:1
-n = input('Digite um número entre 0 e 9999: ')
-print(f'Unidade: {n[3]}')
-print(f'Dezena: {n[2]}')
-print(f'Centena: {n[1]}')
-print(f'Milhar: {n[0]}')
+num = int(input('Digite um número entre 0 e 9999: '))
+print(f'Unidade: {num // 1 % 10}')
+print(f'Dezena: {num // 10 % 10}')
+print(f'Centena: {num // 100 % 10}')
+print(f'Milhar: {num // 1000 % 10}')

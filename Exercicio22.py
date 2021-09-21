@@ -3,13 +3,9 @@
 #•O nome com todas as letras minúsculas;
 #•Quantas letras ao todo (sem considerar espaços);
 #Quantas letras tem o primeiro nome;
-nome = input('Qual o seu nome completo? ')
-print('Nome com todas as letras maiúsculas: ')
-print(nome.upper())
-print('Nome com letras minúsculas:')
-print(nome.lower())
-print('Quantidade de letras que o nome possue: ')
-print(len(nome.replace(' ', '')))
-print('Quantidade de letras do primeiro nome:')
+nome = str(input('Qual o seu nome completo? ')).strip()
+print(f'Nome com todas as letras maiúsculas:{nome.upper()}')
+print(f'Nome com letras minúsculas:{nome.lower()}')
+print(f'Quantidade de letras que o nome possue:{len(nome.replace(" ", ""))} ')
 firstname = nome.split()
-print(len(firstname[0]))
+print(f'Quantidade de letras do primeiro nome:{len(firstname[0])}')
