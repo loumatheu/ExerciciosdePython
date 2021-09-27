@@ -6,8 +6,8 @@ nome = input('Qual o seu nome? ').strip()
 
 
 if 'a' in nome and 'A' in nome:
-    print(f'A letra a aparece {(nome.count("a") + nome.count("A"))} vezes no seu nome.')
-    print(f'A letra "a" aparece primeiramente na posição {nome.lower().find("a")} e sua última posição é na posição '
-          f'{nome.lower().rfind("a")}!')
+    print(f'A letra a aparece {(nome.upper().count("A"))} vezes no seu nome.')
+    print(f'A letra "a" aparece primeiramente na posição {nome.lower().find("a")+1} e sua última posição é na posição '
+          f'{nome.lower().rfind("a")+1}!')
 else:
     print('Sinto muito, o seu nome não possui letra a.')
