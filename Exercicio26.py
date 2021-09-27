@@ -2,13 +2,12 @@
 # • Quantas vezes aparece a letra "A"
 # • Em que posição ela aparece a primeira vez.
 # • Em que posição ela paarece a última vez.
-nome = input('Qual o seu nome? ')
+nome = input('Qual o seu nome? ').strip()
 
 
-if nome.find('a') and nome.find('A'):
-    print('A letra a aparece {} vezes no seu nome.'.format(nome.count('a') + nome.count('A')))
-    print(f'As letras a aparecem nas posições: {nome}')
+if 'a' in nome and 'A' in nome:
+    print(f'A letra a aparece {(nome.count("a") + nome.count("A"))} vezes no seu nome.')
+    print(f'A letra "a" aparece primeiramente na posição {nome.lower().find("a")} e sua última posição é na posição '
+          f'{nome.lower().rfind("a")}!')
 else:
     print('Sinto muito, o seu nome não possui letra a.')
-
-Não sei...
