@@ -8,3 +8,5 @@ if distance <= 200:
 else:
     payment = distance * 0.45
     print(f'Em uma distância de {distance}Km valor a ser pago é: R${payment}')
+
+print('Obrigado por utilizar o nosso calculador de passagens!')
