@@ -1,9 +1,13 @@
 from random import shuffle
 from emoji import emojize
 
-print('=====================================')
-print('           CHALLENGE 20')
-print('=====================================')
+cores = {'azul':'\033[1;34m','verde':'\033[1;32m','semestilo':'\033[m', 'vermelho':'\033[1;31m',
+         'lilas':'\033[1;35m', 'amarelo':'\033[1;33m', 'verdepiscina':'\033[1;36m'}
+
+print(f"""{cores['azul']}====================================================================
+                            CHALLENGE 20
+===================================================================={cores['semestilo']}""")
+
 print(emojize(':star: SORTEIO DE TRABALHOS A SEREM APRESENTADOS :star:', use_aliases=True))
 
 print('Digite o nome dos quatro alunos a seguir e obtenha a ordem a de apresentação.')
