@@ -1,4 +1,8 @@
 #Crie um programa que leia um número inteiro qualquer e mostre na tela se le é PAR ou IMPAR.
+print(f"""{cores['azul']}====================================================================
+                            CHALLENGE 30
+===================================================================={cores['semestilo']}""")
+
 n = float(input('Digite um número: '))
 resto = n % 2
 
