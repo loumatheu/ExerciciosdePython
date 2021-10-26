@@ -7,8 +7,9 @@ print(f"""{cores['azul']}=======================================================
 
 print(f'{cores["verde"]}                         REAJUSTE DE SALÁRIO{cores["semestilo"]}')
 print(f'{cores["azul"]}-{cores["semestilo"]}'*67)
-nome = input('Digite o nome do funcionário: ')
-sa = float(input('Digite o salário atual do funcionário: R$'))
-print(f'O Sr(a). {nome} deixará de receber o valor de R${sa} e passará a receber R${sa*1.15:.2f}!')
-print('Parabéns pelo aumento de 15%!')
+nome = input('Digite o nome do funcionário: ').strip()
+sa = float(input(f'Digite o salário atual do funcionário: {cores["verde"]}R${cores["semestilo"]}'))
+print(f'O Sr(a). {cores["azul"]}{nome}{cores["semestilo"]} deixará de receber o valor de {cores["verde"]}R${sa:.2f}'
+      f'{cores["semestilo"]} e passará a receber {cores["verde"]}R${sa*1.15:.2f}{cores["semestilo"]}!')
+print(f'{cores["amarelo"]}Parabéns pelo aumento de 15%!{cores["semestilo"]}')
 print(f'{cores["azul"]}-'*67)
