@@ -1,4 +1,8 @@
 #Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se eles podem ou não forma um triângulo.
+print(f"""{cores['azul']}====================================================================
+                            CHALLENGE 35
+===================================================================={cores['semestilo']}""")
+
 a = float(input('Insira o valor da primeira segmento: '))
 b = float(input('Insira o valor da segunda segmento: '))
 c = float(input('Insira o valor da terceira segmento: '))

@@ -1,5 +1,9 @@
 from datetime import date
 #Faça um programa que leia um ano qualquer e mostre se ele é BISSEXTO.
+print(f"""{cores['azul']}====================================================================
+                            CHALLENGE 32
+===================================================================={cores['semestilo']}""")
+
 year = int(input('Coloque zero para analisar o ano atual ou insira o ano desejado: '))
 
 if year == 0:
