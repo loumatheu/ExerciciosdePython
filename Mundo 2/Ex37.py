@@ -1,5 +1,4 @@
 cores = {'azul':'\033[1;34m', 'semestilo':'\033[m', 'vermelho':'\033[1;31m', 'verde':'\033[1;32m', 'amarelo':'\033[1;33m'}
-print(f'{cores["azul"]}SIMULADOR DE EMPRÉSTIMO BANCÁRIO{cores["semestilo"]}')
 
 print(f"""{cores['azul']}====================================================================
                             CHALLENGE 37
