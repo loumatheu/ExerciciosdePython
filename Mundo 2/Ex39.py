@@ -1,3 +1,5 @@
+from datetime import date
+
 cores = {'azul':'\033[1;34m', 'semestilo':'\033[m', 'vermelho':'\033[1;31m', 'verde':'\033[1;32m', 'amarelo':'\033[1;33m'}
 
 print(f"""{cores['azul']}====================================================================
@@ -9,7 +11,8 @@ print('                        ALISTAMENTO MILITAR')
 nome = input('Insira seu nome: ').strip()
 anodenascimento = int(input('Insira seu ano de nascimento: '))
 
-idade = 2021 - anodenascimento
+anoatual = date.today().year
+idade = anoatual - anodenascimento
 
 if idade < 18:
     alistamento = (18 - idade) + 2021
