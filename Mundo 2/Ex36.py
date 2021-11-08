@@ -1,12 +1,11 @@
 import emoji
 
-cores = {'azul':'\033[1;34m', 'semestilo':'\033[m', 'vermelho':'\033[1;31', 'verde':'\033[1;32'}
-print(f'{cores["azul"]}SIMULADOR DE EMPRÉSTIMO BANCÁRIO{cores["semestilo"]}')
+cores = {'azul':'\033[1;34m', 'semestilo':'\033[m', 'vermelho':'\033[1;31m', 'verde':'\033[1;32'}
 
 print(f"""{cores['azul']}====================================================================
                             CHALLENGE 36
-===================================================================={cores['semestilo']}""")
-
+====================================================================\n{cores['semestilo']}""")
+print(f'{cores["azul"]}SIMULADOR DE EMPRÉSTIMO BANCÁRIO\n{cores["semestilo"]}')
 nome = str(input('Qual o seu nome?')).strip()
 print(f'Olá, Sr.{cores["azul"]}{nome}{cores["semestilo"]} é um prazer tê-lo em nosso sistema bancário!')
 casa = float(input('Qual o valor da casa? R$'))
