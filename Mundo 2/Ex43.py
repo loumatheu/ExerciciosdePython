@@ -13,9 +13,9 @@ peso = float(input('Peso (Kg): '))
 imc = peso / pow(altura, 2)
 
 if imc < 18.5:
-    print(f'{cores["branco"]}O seu IMC é {imc:.1f} e você está em estado de MAGREZA.{cores["semestilo"]}')
+    print(f'{cores["branco"]}O seu IMC é {imc:.1f} e você está ABAIXO DO PESO.{cores["semestilo"]}')
 elif 18.5 < imc <= 24.9:
-    print(f'{cores["branco"]}O seu IMC é {imc:.1f} e você está NORMAL.{cores["semestilo"]}')
+    print(f'{cores["branco"]}O seu IMC é {imc:.1f} e você está com o PESO IDEAL.{cores["semestilo"]}')
 elif 24.9 < imc <= 30:
     print(f'{cores["branco"]}O seu IMC é {imc:.1f} e você está ACIMA DO PESO.{cores["semestilo"]}')
 else:
