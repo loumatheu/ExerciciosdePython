@@ -1,5 +1,6 @@
 from random import randint
 import emoji
+from time import sleep
 
 cores = {'azul':'\033[1;34m', 'semestilo':'\033[m', 'vermelho':'\033[1;31m', 'verde':'\033[1;32m',
          'amarelo':'\033[1;33m', 'branco':'\033[1;97m', 'ciano':'\033[1;36m'}
@@ -18,6 +19,13 @@ escolha = int(input(f"""Escolha:
 {cores["verde"]}[ 1 ] Papel{cores["semestilo"]}
 {cores["ciano"]}[ 2 ] Tesoura{cores["semestilo"]}
 Digite sua opção: """))
+
+print(f'{cores["branco"]}JO ', end='')
+sleep(0.75)
+print('KEN ', end='')
+sleep(0.75)
+print(f'PÔ!{cores["semestilo"]}')
+sleep(0.75)
 
 if escolha == 0 and computer == 0:
     print(f'EMPATE, o computador também escolheu {itens[computer]}')
