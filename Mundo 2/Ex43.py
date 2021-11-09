@@ -18,7 +18,9 @@ elif 18.5 < imc <= 24.9:
     print(f'{cores["branco"]}O seu IMC é {imc:.1f} e você está com o PESO IDEAL.{cores["semestilo"]}')
 elif 24.9 < imc <= 30:
     print(f'{cores["branco"]}O seu IMC é {imc:.1f} e você está ACIMA DO PESO.{cores["semestilo"]}')
-else:
+elif 30 < imc <= 40:
     print(f'{cores["branco"]}O seu IMC é {imc:.1f} e você está com OBESIDADE.{cores["semestilo"]}')
+elif imc >= 40:
+    print(f'{cores["branco"]}O seu IMC é {imc:.1f} e você está com OBESIDADE MÓRBIDA.{cores["semestilo"]}')
 
 print(f'{cores["azul"]}Coma alimentos saudáveis e pratique exercícios!{cores["semestilo"]}')
