@@ -28,7 +28,7 @@ print(f'PÔ!{cores["semestilo"]}')
 sleep(0.75)
 
 if escolha == 0 and computer == 0:
-    print(f'EMPATE, o computador também escolheu {itens[computer]}')
+    print(f'EMPATE, o computador também escolheu {itens[computer]}.')
 elif escolha == 0 and computer == 1:
     print(f'O computador venceu! Ele escolheu {itens[computer]}.')
 elif escolha == 0 and computer == 2:
@@ -44,6 +44,6 @@ elif escolha == 2 and computer == 0:
 elif escolha == 2 and computer == 1:
     print(f'Parabéns, você venceu! O computador escolheu {itens[computer]}.')
 elif escolha == 2 and computer == 1:
-    print(f'EMPATE, o computador também escolheu {itens[computer]}')
+    print(f'EMPATE, o computador também escolheu {itens[computer]}.')
 else:
     print(f'Você digitou {escolha}, essa opção não faz parte da brincadeira! Tente novamente!')
